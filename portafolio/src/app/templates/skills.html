@@ -1,0 +1,8 @@
+<div *ngFor="let skill of skills" class="skillCard">
+	<img src="{{skill.image}}" alt="">
+	<div class="aboutSkill">
+		<p class="skillName"><strong>{{skill.name}}</strong></p>
+		<p>{{skill.description}}</p>
+		<p><strong>Worked: </strong>{{skill.workExperience}}</p>
+	</div>
+</div>

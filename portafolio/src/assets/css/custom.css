@@ -1,0 +1,103 @@
+.portFolioHeader{
+	background-color:#1d1c1c;
+	padding:20px;
+}
+.headerCont{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.headerCont p{
+	font-size:1.2em;
+	margin:0;
+	color:#FFF;
+}
+
+.profileImage{
+	background-image: url("../images/profile.jpg");
+    width: 125px;
+    height: 125px;
+    background-position: 50% 37%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:50%;
+}
+
+.profileInfo{
+	margin-left:1em;
+}
+.portFolioNav{
+	height:40px;
+}
+.navUl{
+	list-style:none;
+	display:flex;
+	margin:0;
+	padding:0;
+	justify-content: center;
+	height:100%;
+	align-items:center;
+	background-color:rgb(10, 22, 89);
+}
+.navLi{
+	justify-content: center;
+	flex-grow:1;
+	display:flex;
+	align-items:center;
+}
+.navLi a{
+	color:white;
+	text-decoration:none;
+	display:flex;
+}
+.navLi i{
+	color:#FFF;
+	margin-right:5px;
+}
+.navLi:hover{
+	text-decoration:underline;
+	cursor:pointer;
+	font-style:italic;
+}
+
+.outletContainer{
+	padding:30px;
+	display:flex;
+}
+.outletContainer skills{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+}
+.skillCard{
+	margin:10px 10px;
+	display:flex;
+	flex-grow:1;
+	box-shadow:0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+	flex-basis:40%;
+	padding:15px;
+}
+
+.skillCard img{
+	width:180px;
+	height:180px;
+	padding:10px;
+}
+
+.aboutSkill{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction:column;
+}
+.aboutSkill p{
+	flex-grow:1;
+}
+
+.skillName{
+	font-size:1.5em;
+	color:#4d4949;
+	margin:0;
+	padding:0;
+}

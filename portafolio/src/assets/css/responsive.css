@@ -3,3 +3,10 @@
 		display:none;
 	}
 }
+
+@media (max-width:400px){
+	.skillCard img{
+		width:100px;
+		height:100px;
+	}
+}

@@ -1,1 +1,12 @@
-work
+<div *ngFor="let job of jobs" class="jobCard">
+	<div class="aboutSkill">
+		<p class="jobName"><strong>{{job.name}}</strong></p>
+		<p>{{job.role}}</p>
+		<span>Projects:</span>
+			<ul class="jobProyects">
+				<li *ngFor="let project of job.projects">{{project.name}}</li>
+			</ul>
+		<p><strong>From: </strong>{{job.from}}</p>
+		<p><strong>To: </strong>{{job.to}}</p>
+	</div>
+</div>

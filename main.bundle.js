@@ -120,7 +120,7 @@ var ContactComponent = (function () {
         this.emailTitle = "Email:";
         this.mobileTitle = "Móvil:";
         this.locationTitle = "Ubicación:";
-        this.cvTitle = "Mi Currículo!:";
+        this.cvTitle = "Solicita mi Currículo!:";
         this.cv = [{
                 lang: "Español",
                 link: "https://drive.google.com/open?id=0B1uPRn_EOqfDekNpOUhtQmdBUzg"

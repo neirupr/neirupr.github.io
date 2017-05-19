@@ -1,12 +1,41 @@
+@media (max-width:400px){
+	.skillCard img{
+		width:100px;
+		height:100px;
+	}
+}
+
+@media (max-width:500px){
+	body{
+		background-repeat: repeat;
+    	height: auto;
+	}
+	.contactDetails > h4{
+		font-size:20px;
+	}
+}
 @media (max-width: 550px) {
 	.navLi a{
 		display:none;
 	}
 }
-
-@media (max-width:400px){
-	.skillCard img{
-		width:100px;
-		height:100px;
+@media (max-width:800px){
+	.aboutContainer > span{
+		overflow:initial;
+	}
+	.overview-container{
+		flex-direction:column;
+	}
+	.overview-image{
+		flex-shrink:0;
+		min-width:200px;
+		width:30%;
+		order:0;
+		margin-bottom:30px;
+	}
+	.aboutContainer{
+		order:1;
+		margin:0;
+		width:100%;
 	}
 }

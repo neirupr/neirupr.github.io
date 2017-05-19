@@ -1,49 +1,104 @@
 webpackJsonp([1,4],{
 
-/***/ 152:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\r\n\t\t<p><strong>{{emailTitle}}</strong>\r\n\t\t\t{{email}}\r\n\t\t</p>\r\n\t\t<p><strong>{{mobileTitle}}</strong>\r\n\t\t\t{{mobile}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
-
-/***/ }),
-
 /***/ 153:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"overview-container\">\r\n\t<div class=\"aboutContainer card\">\r\n\t\t<span>Mi nombre es Neiro Andres Torres Castro, Ingeniero en Sistemas e Informática y Especialista en Mercados de Energía de la Universidad Nacional de Colombia, sede Medellín.\r\n\t\tAmante de la programación, especialmente el desarrollo web enfocado al Front-end.</span>\r\n\t</div>\r\n\t<div class=\"overview-image\"></div>\r\n</div>"
+module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\r\n\t\t<h6 style=\"text-align:center;\"><strong>{{title}}</strong>\r\n\t\t\t{{framework}}\r\n\t\t</h6>\r\n\t\t<p *ngFor=\"let tech of addTools\" style=\"text-align:left;\"><strong>{{tech.tool}}</strong>\r\n\t\t\t{{tech.version}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
 /***/ 154:
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"portFolioHeader\">\r\n\t<div class=\"headerCont\">\r\n\t\t<div class=\"profileImage\">\r\n\t    </div>\r\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\r\n\t</div>\r\n</header>\r\n\r\n<nav class=\"portFolioNav\">\r\n\t<ul class=\"navUl\">\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/overview']\">account_box</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/overview']\">Resumen</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/skills']\">trending_up</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/skills']\">Habilidades</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/experience']\">work</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/experience']\">Experiencia laboral</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/contact']\">contact_mail</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/contact']\">Contacto</a>\r\n\t\t</li>\r\n\t</ul>\t\r\n</nav>\r\n\r\n<div class=\"outletContainer\">\r\n\t<router-outlet></router-outlet>\r\n</div>"
+module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\r\n\t\t<p><strong>{{emailTitle}}</strong>\r\n\t\t\t{{email}}\r\n\t\t</p>\r\n\t\t<p><strong>{{mobileTitle}}</strong>\r\n\t\t\t{{mobile}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
 /***/ 155:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngFor=\"let skill of skills\" class=\"skillCard card\">\r\n\t<img src=\"{{skill.image}}\" alt=\"\">\r\n\t<div class=\"aboutSkill\">\r\n\t\t<p class=\"skillName\"><strong>{{skill.name}}</strong></p>\r\n\t\t<p>{{skill.description}}</p>\r\n\t\t<p><strong>Worked: </strong>{{skill.workExperience}}</p>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"overview-container\">\r\n\t<div class=\"aboutContainer card\">\r\n\t\t<span>Mi nombre es Neiro Andres Torres Castro, Ingeniero en Sistemas e Informática y Especialista en Mercados de Energía de la Universidad Nacional de Colombia, sede Medellín.\r\n\t\tAmante de la programación, especialmente el desarrollo web enfocado al Front-end.</span>\r\n\t</div>\r\n\t<img class=\"overview-image\" src=\"../../assets/images/me.jpg\" alt=\"\">\r\n</div>"
 
 /***/ }),
 
 /***/ 156:
 /***/ (function(module, exports) {
 
+module.exports = "<header class=\"portFolioHeader\">\r\n\t<div class=\"headerCont\">\r\n\t\t<div class=\"profileImage\">\r\n\t    </div>\r\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\r\n\t</div>\r\n</header>\r\n\r\n<nav class=\"portFolioNav\">\r\n\t<ul class=\"navUl\">\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/overview']\">account_box</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/overview']\">Resumen</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/skills']\">trending_up</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/skills']\">Habilidades</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/experience']\">work</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/experience']\">Experiencia laboral</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/contact']\">contact_mail</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/contact']\">Contacto</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/about']\">info</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/about']\">Acerca de</a>\r\n\t\t</li>\r\n\t</ul>\t\r\n</nav>\r\n\r\n<div class=\"outletContainer\">\r\n\t<router-outlet></router-outlet>\r\n</div>"
+
+/***/ }),
+
+/***/ 157:
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngFor=\"let skill of skills\" class=\"skillCard card\">\r\n\t<img src=\"{{skill.image}}\" alt=\"\">\r\n\t<div class=\"aboutSkill\">\r\n\t\t<p class=\"skillName\"><strong>{{skill.name}}</strong></p>\r\n\t\t<p>{{skill.description}}</p>\r\n\t\t<p><strong>Worked: </strong>{{skill.workExperience}}</p>\r\n\t</div>\r\n</div>"
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, exports) {
+
 module.exports = "<div *ngFor=\"let job of jobs\" class=\"jobCard card\">\r\n\t<div class=\"aboutSkill\">\r\n\t\t<p class=\"jobName\"><strong>{{job.name}}</strong></p>\r\n\t\t<p>{{job.role}}</p>\r\n\t\t<span>Projects:</span>\r\n\t\t\t<ul class=\"jobProyects\">\r\n\t\t\t\t<li *ngFor=\"let project of job.projects\">{{project.name}}</li>\r\n\t\t\t</ul>\r\n\t\t<p><strong>From: </strong>{{job.from}}</p>\r\n\t\t<p><strong>To: </strong>{{job.to}}</p>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
-/***/ 187:
+/***/ 189:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(85);
+module.exports = __webpack_require__(86);
 
 
 /***/ }),
 
 /***/ 56:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var AboutComponent = (function () {
+    function AboutComponent() {
+        this.name = "Portafolio Neiro Torres";
+        this.title = "Construido en: ";
+        this.framework = "Angular 4";
+        this.addTools = [{
+                tool: "Angular CLI: ",
+                version: "4.0.0"
+            },
+            {
+                tool: "Material Design: ",
+                version: "Lite"
+            },
+            {
+                tool: "NodeJS: ",
+                version: "6.0.60"
+            },
+            {
+                tool: "Typescript: ",
+                version: "2.2.0"
+            }];
+    }
+    return AboutComponent;
+}());
+AboutComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
+        selector: 'about',
+        template: __webpack_require__(153)
+    })
+], AboutComponent);
+
+//# sourceMappingURL=about.component.js.map
+
+/***/ }),
+
+/***/ 57:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -71,7 +126,7 @@ var ContactComponent = (function () {
 ContactComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'contact',
-        template: __webpack_require__(152)
+        template: __webpack_require__(154)
     })
 ], ContactComponent);
 
@@ -79,7 +134,7 @@ ContactComponent = __decorate([
 
 /***/ }),
 
-/***/ 57:
+/***/ 58:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -106,7 +161,7 @@ var OverviewComponent = (function () {
 OverviewComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'overview',
-        template: __webpack_require__(153)
+        template: __webpack_require__(155)
     })
 ], OverviewComponent);
 
@@ -114,7 +169,7 @@ OverviewComponent = __decorate([
 
 /***/ }),
 
-/***/ 58:
+/***/ 59:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -207,7 +262,7 @@ var SkillsComponent = (function () {
 SkillsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'skills',
-        template: __webpack_require__(155)
+        template: __webpack_require__(157)
     })
 ], SkillsComponent);
 
@@ -215,7 +270,7 @@ SkillsComponent = __decorate([
 
 /***/ }),
 
-/***/ 59:
+/***/ 60:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -257,7 +312,7 @@ var XperienceComponent = (function () {
 XperienceComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'experience',
-        template: __webpack_require__(156)
+        template: __webpack_require__(158)
     })
 ], XperienceComponent);
 
@@ -265,7 +320,7 @@ XperienceComponent = __decorate([
 
 /***/ }),
 
-/***/ 84:
+/***/ 85:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -274,20 +329,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 84;
+webpackEmptyContext.id = 85;
 
 
 /***/ }),
 
-/***/ 85:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(97);
 
 
 
@@ -300,7 +355,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -325,7 +380,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(154),
+        template: __webpack_require__(156),
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
@@ -334,20 +389,21 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_contact_component__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_overview_component__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_skills_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_xperience_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_about_component__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_contact_component__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_overview_component__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_skills_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_xperience_component__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -366,6 +422,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -375,10 +432,11 @@ AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_6__components_contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_7__components_overview_component__["a" /* OverviewComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__components_skills_component__["a" /* SkillsComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__components_xperience_component__["a" /* XperienceComponent */]
+            __WEBPACK_IMPORTED_MODULE_6__components_about_component__["a" /* AboutComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__components_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__components_overview_component__["a" /* OverviewComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__components_skills_component__["a" /* SkillsComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__components_xperience_component__["a" /* XperienceComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -395,15 +453,16 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_contact_component__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_overview_component__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_skills_component__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_xperience_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_contact_component__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_about_component__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_overview_component__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_skills_component__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_xperience_component__ = __webpack_require__(60);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return appRoutingProviders; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -412,12 +471,14 @@ AppModule = __decorate([
 
 
 
+
 var appRoutes = [
     { path: '', redirectTo: '/overview', pathMatch: 'full' },
-    { path: 'overview', component: __WEBPACK_IMPORTED_MODULE_2__components_overview_component__["a" /* OverviewComponent */] },
+    { path: 'about', component: __WEBPACK_IMPORTED_MODULE_2__components_about_component__["a" /* AboutComponent */] },
     { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_1__components_contact_component__["a" /* ContactComponent */] },
-    { path: 'skills', component: __WEBPACK_IMPORTED_MODULE_3__components_skills_component__["a" /* SkillsComponent */] },
-    { path: 'experience', component: __WEBPACK_IMPORTED_MODULE_4__components_xperience_component__["a" /* XperienceComponent */] }
+    { path: 'experience', component: __WEBPACK_IMPORTED_MODULE_5__components_xperience_component__["a" /* XperienceComponent */] },
+    { path: 'overview', component: __WEBPACK_IMPORTED_MODULE_3__components_overview_component__["a" /* OverviewComponent */] },
+    { path: 'skills', component: __WEBPACK_IMPORTED_MODULE_4__components_skills_component__["a" /* SkillsComponent */] }
 ];
 var appRoutingProviders = [];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
@@ -425,7 +486,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 /***/ }),
 
-/***/ 96:
+/***/ 97:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -442,5 +503,5 @@ var environment = {
 
 /***/ })
 
-},[187]);
+},[189]);
 //# sourceMappingURL=main.bundle.js.map

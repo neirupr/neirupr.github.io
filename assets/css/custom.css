@@ -2,6 +2,9 @@ body{
 	background-image: url(../images/background.jpeg);
     background-size: cover;
 }
+.material-icons{
+	outline:none!important;
+}
 .portFolioHeader{
     background-color: rgba(29, 28, 28, 0.8);
     padding: 20px;

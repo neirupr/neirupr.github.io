@@ -10,14 +10,14 @@ module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDeta
 /***/ 154:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\r\n\t\t<p><strong>{{emailTitle}}</strong>\r\n\t\t\t{{email}}\r\n\t\t</p>\r\n\t\t<p><strong>{{mobileTitle}}</strong>\r\n\t\t\t{{mobile}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\t\r\n\t\t<p><strong>{{cvTitle}}</strong>\r\n\t\t\t<a class=\"cvLink\" target=\"_blank\" href={{cur.link}} *ngFor=\"let cur of cv\">{{cur.lang}}</a>\r\n\t\t</p>\r\n\t\t\r\n\t\t<p><strong>{{emailTitle}}</strong>\r\n\t\t\t{{email}}\r\n\t\t</p>\r\n\t\t<p><strong>{{mobileTitle}}</strong>\r\n\t\t\t{{mobile}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>\r\n<!-- \r\n<div class=\"card\">\r\n\t<h4><strong>{{cvTitle}}</strong></h4>\r\n\t<div>\r\n\t\t<a target=\"_blank\" href={{cur.link}} *ngFor=\"let cur of cv\">{{cur.lang}}</a>\r\n\t</div>\r\n</div> -->"
 
 /***/ }),
 
 /***/ 155:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"overview-container\">\r\n\t<div class=\"aboutContainer card\">\r\n\t\t<span>Mi nombre es Neiro Andres Torres Castro, Ingeniero en Sistemas e Informática y Especialista en Mercados de Energía de la Universidad Nacional de Colombia, sede Medellín.\r\n\t\tAmante de la programación, especialmente el desarrollo web enfocado al Front-end.</span>\r\n\t</div>\r\n\t<img class=\"overview-image\" src=\"../../assets/images/me.jpg\" alt=\"\">\r\n</div>"
+module.exports = "<div class=\"overview-container\">\r\n\t<div class=\"aboutContainer card\">\r\n\t\t<span>{{about}}</span>\r\n\t</div>\r\n\t<img class=\"overview-image\" src=\"../../assets/images/me.jpg\" alt=\"\">\r\n</div>"
 
 /***/ }),
 
@@ -120,6 +120,15 @@ var ContactComponent = (function () {
         this.emailTitle = "Email:";
         this.mobileTitle = "Móvil:";
         this.locationTitle = "Ubicación:";
+        this.cvTitle = "Mi Currículo!:";
+        this.cv = [{
+                lang: "Español",
+                link: "https://drive.google.com/open?id=0B1uPRn_EOqfDekNpOUhtQmdBUzg"
+            },
+            {
+                lang: "English",
+                link: "https://drive.google.com/open?id=0B1uPRn_EOqfDQ25wWkljaVpBazg"
+            }];
     }
     return ContactComponent;
 }());
@@ -153,7 +162,7 @@ var OverviewComponent = (function () {
             { career: "Ingeniero de Sistemas e Informática" },
             { career: "Especialista en Mercados de Energía" }
         ];
-        this.about = "HOL";
+        this.about = "Mi nombre es Neiro Andres Torres Castro, Ingeniero en Sistemas e Informática y Especialista en Mercados de Energía de la Universidad Nacional de Colombia, sede Medellín. Amante de la programación, especialmente el desarrollo web enfocado al Front-end.";
         this.university = "Universidad Nacional de Colombia";
     }
     return OverviewComponent;

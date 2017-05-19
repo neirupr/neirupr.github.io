@@ -188,6 +188,9 @@ body{
 	padding:0;
 	text-align:center;
 }
+.cvLink{
+	margin-right:5px;
+}
 .overview-container{
 	display: flex;
     justify-content: center;

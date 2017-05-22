@@ -382,11 +382,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var AppComponent = (function () {
     function AppComponent() {
+        this.choosen = "overview";
         this.profilePicture = '../assets/images/profile.jpg';
     }
     AppComponent.prototype.choose = function (option) {
         this.choosen = option;
-        console.log(option);
     };
     return AppComponent;
 }());

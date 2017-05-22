@@ -24,7 +24,7 @@ module.exports = "<div class=\"overview-container\">\r\n\t<div class=\"aboutCont
 /***/ 156:
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"portFolioHeader\">\r\n\t<div class=\"headerCont\">\r\n\t\t<div class=\"profileImage\">\r\n\t    </div>\r\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\r\n\t</div>\r\n</header>\r\n\r\n<nav class=\"portFolioNav\">\r\n\t<ul class=\"navUl\">\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/overview']\">account_box</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/overview']\">Resumen</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/skills']\">trending_up</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/skills']\">Habilidades</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/experience']\">work</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/experience']\">Experiencia laboral</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/contact']\">contact_mail</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/contact']\">Contacto</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\">\r\n\t\t\t<i class=\"material-icons\" [routerLink]=\"['/about']\">info</i>\r\n\t\t\t<a class=\"navLink\" [routerLink]=\"['/about']\">Acerca de</a>\r\n\t\t</li>\r\n\t</ul>\t\r\n</nav>\r\n\r\n<div class=\"outletContainer\">\r\n\t<router-outlet></router-outlet>\r\n</div>"
+module.exports = "<header class=\"portFolioHeader\">\r\n\t<div class=\"headerCont\">\r\n\t\t<div class=\"profileImage\">\r\n\t    </div>\r\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\r\n\t</div>\r\n</header>\r\n\r\n<nav class=\"portFolioNav\">\r\n\t<ul class=\"navUl\">\r\n\t\t<li class=\"navLi\" [routerLink]=\"['/overview']\" [class.choosenOption]=\"choosen === 'overview'\" (click)=\"choose('overview')\">\r\n\t\t\t<i class=\"material-icons\">account_box</i>\r\n\t\t\t<a class=\"navLink\">Resumen</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\" [routerLink]=\"['/skills']\" [class.choosenOption]=\"choosen === 'skills'\" (click)=\"choose('skills')\">\r\n\t\t\t<i class=\"material-icons\">trending_up</i>\r\n\t\t\t<a class=\"navLink\">Habilidades</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\" [routerLink]=\"['/experience']\" [class.choosenOption]=\"choosen === 'experience'\" (click)=\"choose('experience')\">\r\n\t\t\t<i class=\"material-icons\">work</i>\r\n\t\t\t<a class=\"navLink\">Experiencia laboral</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\" [routerLink]=\"['/contact']\" [class.choosenOption]=\"choosen === 'contact'\" (click)=\"choose('contact')\">\r\n\t\t\t<i class=\"material-icons\">contact_mail</i>\r\n\t\t\t<a class=\"navLink\">Contacto</a>\r\n\t\t</li>\r\n\t\t<li class=\"navLi\" [routerLink]=\"['/about']\" [class.choosenOption]=\"choosen === 'about'\" (click)=\"choose('about')\">\r\n\t\t\t<i class=\"material-icons\">info</i>\r\n\t\t\t<a class=\"navLink\">Acerca de</a>\r\n\t\t</li>\r\n\t</ul>\t\r\n</nav>\r\n\r\n<div class=\"outletContainer\">\r\n\t<router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
@@ -384,6 +384,10 @@ var AppComponent = (function () {
     function AppComponent() {
         this.profilePicture = '../assets/images/profile.jpg';
     }
+    AppComponent.prototype.choose = function (option) {
+        this.choosen = option;
+        console.log(option);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

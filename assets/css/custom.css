@@ -48,6 +48,10 @@ body{
 }
 .choosenOption{
 	border-bottom:2px solid white;
+	border-radius:0!important;
+}
+.choosenOption:hover{
+	font-style:initial!important;
 }
 .navUl{
 	list-style:none;
@@ -66,21 +70,37 @@ body{
 	display:flex;
 	align-items:center;
 }
+.navLiContainer{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	border-radius:0.25rem;
+	color:#FFF;
+	padding: 0 5px 0 5px;
+	outline:none;
+}
+.navLiContainer:hover{
+	background-color:#FFF;
+	color:black !important;
+	transition:background-color 0.2s,color 0.2s, font-style:1s;
+	font-style:italic;
+	cursor:pointer;
+}
 .navLi a{
 	outline:none!important;
-	color:white;
+	color:inherit;
 	text-decoration:none;
 	display:flex;
 }
 .navLi i{
-	color:#FFF;
+	color:none;
 	margin-right:5px;
 }
-.navLi:hover{
-	border-bottom:2px solid white;
-	cursor:pointer;
-	font-style:italic;
-	transition:300ms;
+.navLiContNoHover:hover{
+	background-color:inherit!important;
+	color:#fff!important;
+	transition:none!important;
+	cursor:default!important;
 }
 
 .outletContainer{

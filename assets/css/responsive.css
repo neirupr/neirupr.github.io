@@ -18,6 +18,9 @@
 	.navLi a{
 		display:none;
 	}
+	.navLi i{
+		margin:0;
+	}
 }
 @media (max-width:800px){
 	.aboutContainer > span{

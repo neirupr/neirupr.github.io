@@ -196,73 +196,73 @@ var SkillsComponent = (function () {
         this.skills = [
             { name: 'JavaScript',
                 image: '../../assets/images/workExperience/javascript.png',
-                description: 'JavaScript for dynamic websites handling',
-                workExperience: 'Yes'
+                description: 'JavaScript para el manejo de sitios web dinámicos',
+                workExperience: 'Sí'
             },
             { name: 'HTML5',
                 image: '../../assets/images/workExperience/html5.png',
-                description: 'HTML5 any description for the sample',
-                workExperience: 'Yes'
+                description: 'HTML5 para maquetación de sitios web',
+                workExperience: 'Sí'
             },
             { name: 'CSS3',
                 image: '../../assets/images/workExperience/css3.jpg',
-                description: 'Skillw with the latest version of css',
-                workExperience: 'Yes'
+                description: 'Grandes habilidades de diseño estético con CSS3',
+                workExperience: 'Sí'
             },
             { name: 'Ember JS',
                 image: '../../assets/images/workExperience/emberjs.png',
-                description: 'Social networks using EmberJS framework',
-                workExperience: 'Yes'
+                description: 'Creación de redes sociales utilizando el framework EmberJS',
+                workExperience: 'Sí'
             },
             { name: 'JQuery',
                 image: '../../assets/images/workExperience/jquery.png',
-                description: 'Javascript tools compilation for quick web developing.',
-                workExperience: 'Yes'
+                description: 'Compilación de herramientas Javascript para desarrollo web ágil y rápido.',
+                workExperience: 'Sí'
             },
             { name: 'Angular',
                 image: '../../assets/images/workExperience/angular.jpg',
-                description: 'Autolearning coursed in Udemy. Skills growing up.',
+                description: 'Autoaprendizaje mediante un curso en Udemy. Habilidades en crecimiento!.',
                 workExperience: 'No'
             },
             { name: 'Material Design',
                 image: '../../assets/images/workExperience/material-design.jpg',
-                description: 'CSS framework for google stylized components.',
-                workExperience: 'Yes'
+                description: 'Framework CSS para componentes con estilos de google/android.',
+                workExperience: 'Sí'
             },
             { name: 'Bootstrap',
                 image: '../../assets/images/workExperience/bootstrap.png',
-                description: 'CSS framework for components stylizing.',
-                workExperience: 'Yes'
+                description: 'Framework CSS para estilizar elementos.',
+                workExperience: 'Sí'
             },
             { name: 'AS/400',
                 image: '../../assets/images/workExperience/as400.jpg',
-                description: 'IBM operative system. Including Cobol language and RPG',
-                workExperience: 'Yes'
+                description: 'Curso empresarial del sistema operativo IBM, incluyendo Cobol y RPG',
+                workExperience: 'No'
             },
             { name: 'PL/SQL',
                 image: '../../assets/images/workExperience/oracle.jpg',
-                description: 'Autolearning and some work experience on Oracle SQL and PL/SQL',
-                workExperience: 'Yes'
+                description: 'Autoaprendizaje y mediana experiencia laboral en Oracle SQL y PL/SQL',
+                workExperience: 'Sí'
             },
             { name: 'Java',
                 image: '../../assets/images/workExperience/java.png',
-                description: 'Modern, scalable and mantainable applications using Java.',
+                description: 'Aplicaciones modernas, escalables y de fácil mantenimiento usando Java.',
                 workExperience: 'No'
             },
             { name: 'C++',
                 image: '../../assets/images/workExperience/c++.png',
-                description: 'Intermediate level domain on this programming language.',
+                description: 'Nivel intermedio de dominio en este lenguaje de programación.',
                 workExperience: 'No'
             },
             { name: 'Finacle',
                 image: '../../assets/images/workExperience/finacle.jpg',
-                description: "Banking solution System. Finacle Scripting for system customization.",
-                workExperience: 'Yes'
+                description: "Systema de solución bancaria. Conocimiento en Finacle Scripting para personalización del sistema.",
+                workExperience: 'Sí'
             },
             { name: 'VBA',
                 image: '../../assets/images/workExperience/vba.png',
-                description: "Macros for Microsoft Office documents' tasks automation",
-                workExperience: 'Yes'
+                description: "Macros para documentos Microsoft Office y automatización de tareas.",
+                workExperience: 'Sí'
             }
         ];
     }

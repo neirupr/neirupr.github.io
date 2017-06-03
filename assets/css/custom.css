@@ -82,7 +82,7 @@ body{
 .navLiContainer:hover{
 	background-color:#FFF;
 	color:black !important;
-	transition:background-color 0.2s,color 0.2s, font-style:1s;
+	transition:0.2s;
 	font-style:italic;
 	cursor:pointer;
 }

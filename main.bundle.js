@@ -38,13 +38,8 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-// The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: false
+    production: true
 };
 //# sourceMappingURL=environment.js.map
 
@@ -53,42 +48,42 @@ var environment = {
 /***/ 156:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\r\n\t\t<h6 style=\"text-align:center;\"><strong>{{title}}</strong>\r\n\t\t\t{{framework}}\r\n\t\t</h6>\r\n\t\t<p *ngFor=\"let tech of addTools\" style=\"text-align:left;\"><strong>{{tech.tool}}</strong>\r\n\t\t\t{{tech.version}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"card contactCard\">\n\t<div class=\"contactDetails\">\n\t\t<h4><strong>{{name}}</strong></h4>\n\t\n\t\t<h6 style=\"text-align:center;\"><strong>{{title}}</strong>\n\t\t\t{{framework}}\n\t\t</h6>\n\t\t<p *ngFor=\"let tech of addTools\" style=\"text-align:left;\"><strong>{{tech.tool}}</strong>\n\t\t\t{{tech.version}}\n\t\t</p>\n\t</div>\n</div>"
 
 /***/ }),
 
 /***/ 157:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card contactCard\">\r\n\t<div class=\"contactDetails\">\r\n\t\t<h4><strong>{{name}}</strong></h4>\r\n\t\t\r\n\t\t<p><strong>{{cvTitle}}</strong>\r\n\t\t\t<a class=\"cvLink\" target=\"_blank\" href={{cur.link}} *ngFor=\"let cur of cv\">{{cur.lang}}</a>\r\n\t\t</p>\r\n\t\t\r\n\t\t<p><strong>{{emailTitle}}</strong>\r\n\t\t\t{{email}}\r\n\t\t</p>\r\n\t\t<p><strong>{{mobileTitle}}</strong>\r\n\t\t\t{{mobile}}\r\n\t\t</p>\r\n\t\t<p><strong>{{locationTitle}}</strong>\r\n\t\t\t{{location}}\r\n\t\t</p>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"card contactCard\">\n\t<div class=\"contactDetails\">\n\t\t<h4><strong>{{name}}</strong></h4>\n\t\t\n\t\t<p><strong>{{cvTitle}}</strong>\n\t\t\t<a class=\"cvLink\" target=\"_blank\" href={{cur.link}} *ngFor=\"let cur of cv\">{{cur.lang}}</a>\n\t\t</p>\n\t\t\n\t\t<p><strong>{{emailTitle}}</strong>\n\t\t\t{{email}}\n\t\t</p>\n\t\t<p><strong>{{mobileTitle}}</strong>\n\t\t\t{{mobile}}\n\t\t</p>\n\t\t<p><strong>{{locationTitle}}</strong>\n\t\t\t{{location}}\n\t\t</p>\n\t</div>\n</div>"
 
 /***/ }),
 
 /***/ 158:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n\t<div class=\"col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 card ml-auto mr-auto aboutContainer\">\r\n\t\t<span>{{about}}</span>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"row\">\n\t<div class=\"col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 card ml-auto mr-auto aboutContainer\">\n\t\t<span>{{about}}</span>\n\t</div>\n</div>"
 
 /***/ }),
 
 /***/ 159:
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"portFolioHeader\">\r\n\t<div class=\"headerCont\">\r\n\t\t<div class=\"profileImage\">\r\n\t    </div>\r\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\r\n\t</div>\r\n</header>\r\n\r\n<nav class=\"portFolioNav\">\r\n\t<ul class=\"navUl row align-items-center justify-content-around\">\r\n\t\t<li class=\"col-2 navLi\">\r\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/overview']\" [class.navLiContNoHover]=\"choosen === 'overview'\" [class.choosenOption]=\"choosen === 'overview'\" (click)=\"choose('overview')\">\r\n\t\t\t\t<i class=\"material-icons\">account_box</i>\r\n\t\t\t\t<a class=\"navLink\">Resumen</a>\r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\t<li class=\"col-2 navLi\">\r\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/skills']\" [class.navLiContNoHover]=\"choosen === 'skills'\" [class.choosenOption]=\"choosen === 'skills'\" (click)=\"choose('skills')\">\r\n\t\t\t\t<i class=\"material-icons\">trending_up</i>\r\n\t\t\t\t<a class=\"navLink\">Habilidades</a>\r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\t<li class=\"col-2 navLi\">\r\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/experience']\" [class.navLiContNoHover]=\"choosen === 'experience'\" [class.choosenOption]=\"choosen === 'experience'\" (click)=\"choose('experience')\">\r\n\t\t\t\t<i class=\"material-icons\">work</i>\r\n\t\t\t\t<a class=\"navLink\">Experiencia</a>\r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\t<li class=\"col-2 navLi\">\r\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/contact']\" [class.navLiContNoHover]=\"choosen === 'contact'\" [class.choosenOption]=\"choosen === 'contact'\" (click)=\"choose('contact')\">\r\n\t\t\t\t<i class=\"material-icons\">contact_mail</i>\r\n\t\t\t\t<a class=\"navLink\">Contacto</a>\r\n\t\t\t</div>\r\n\t\t</li>\r\n\t\t<li class=\"col-2 navLi\">\r\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/about']\" [class.navLiContNoHover]=\"choosen === 'about'\" [class.choosenOption]=\"choosen === 'about'\" (click)=\"choose('about')\">\r\n\t\t\t\t<i class=\"material-icons\">info</i>\r\n\t\t\t\t<a class=\"navLink\">Acerca</a>\r\n\t\t\t</div>\r\n\t\t</li>\r\n\t</ul>\t\r\n</nav>\r\n\r\n<div class=\"container-fluid outletContainer\">\r\n\t<router-outlet></router-outlet>\r\n</div>"
+module.exports = "<header class=\"portFolioHeader\">\n\t<div class=\"headerCont\">\n\t\t<div class=\"profileImage\">\n\t    </div>\n\t    <p><strong>Neiro Andres Torres Castro</strong></p>\n\t</div>\n</header>\n\n<nav class=\"portFolioNav\">\n\t<ul class=\"navUl row align-items-center justify-content-around\">\n\t\t<li class=\"col-2 navLi\">\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/overview']\" [class.navLiContNoHover]=\"choosen === 'overview'\" [class.choosenOption]=\"choosen === 'overview'\" (click)=\"choose('overview')\">\n\t\t\t\t<i class=\"material-icons\">account_box</i>\n\t\t\t\t<a class=\"navLink\">Resumen</a>\n\t\t\t</div>\n\t\t</li>\n\t\t<li class=\"col-2 navLi\">\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/skills']\" [class.navLiContNoHover]=\"choosen === 'skills'\" [class.choosenOption]=\"choosen === 'skills'\" (click)=\"choose('skills')\">\n\t\t\t\t<i class=\"material-icons\">trending_up</i>\n\t\t\t\t<a class=\"navLink\">Habilidades</a>\n\t\t\t</div>\n\t\t</li>\n\t\t<li class=\"col-2 navLi\">\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/experience']\" [class.navLiContNoHover]=\"choosen === 'experience'\" [class.choosenOption]=\"choosen === 'experience'\" (click)=\"choose('experience')\">\n\t\t\t\t<i class=\"material-icons\">work</i>\n\t\t\t\t<a class=\"navLink\">Experiencia</a>\n\t\t\t</div>\n\t\t</li>\n\t\t<li class=\"col-2 navLi\">\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/contact']\" [class.navLiContNoHover]=\"choosen === 'contact'\" [class.choosenOption]=\"choosen === 'contact'\" (click)=\"choose('contact')\">\n\t\t\t\t<i class=\"material-icons\">contact_mail</i>\n\t\t\t\t<a class=\"navLink\">Contacto</a>\n\t\t\t</div>\n\t\t</li>\n\t\t<li class=\"col-2 navLi\">\n\t\t\t<div class=\"navLiContainer\" [routerLink]=\"['/about']\" [class.navLiContNoHover]=\"choosen === 'about'\" [class.choosenOption]=\"choosen === 'about'\" (click)=\"choose('about')\">\n\t\t\t\t<i class=\"material-icons\">info</i>\n\t\t\t\t<a class=\"navLink\">Acerca</a>\n\t\t\t</div>\n\t\t</li>\n\t</ul>\t\n</nav>\n\n<div class=\"container-fluid outletContainer\">\n\t<router-outlet></router-outlet>\n</div>"
 
 /***/ }),
 
 /***/ 160:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n\t<div *ngFor=\"let skill of skills\" class=\"skillCard flex-row card col-12 col-sm-10 col-md-8 col-lg-5 mr-auto ml-auto justify-content-between\">\r\n\t\t<img src=\"{{skill.image}}\" alt=\"\" class=\"col-5\">\r\n\t\t<div class=\"aboutSkill col-8 ml-auto\">\r\n\t\t\t<p class=\"skillName\"><strong>{{skill.name}}</strong></p>\r\n\t\t\t<div style=\"display:flex;flex-direction:column;\t\">\r\n\t\t\t\t<span><strong>Nivel: </strong>{{skill.level}}</span>\r\n\t\t\t\t<span><strong>Trabajado: </strong>{{skill.workExperience}}</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"row\">\n\t<div *ngFor=\"let skill of skills\" class=\"skillCard flex-row card col-12 col-sm-10 col-md-8 col-lg-5 mr-auto ml-auto justify-content-between\">\n\t\t<img src=\"{{skill.image}}\" alt=\"\" class=\"col-5\">\n\t\t<div class=\"aboutSkill col-8 ml-auto\">\n\t\t\t<p class=\"skillName\"><strong>{{skill.name}}</strong></p>\n\t\t\t<div style=\"display:flex;flex-direction:column;\t\">\n\t\t\t\t<span><strong>Nivel: </strong>{{skill.level}}</span>\n\t\t\t\t<span><strong>Trabajado: </strong>{{skill.workExperience}}</span>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
 /***/ 161:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row xperience-container\">\r\n\t<div *ngFor=\"let job of jobs\" class=\"jobCard card col-12 col-sm-10 col-md-7 col-lg-5 mr-auto ml-auto justify-content-between\">\r\n\t\t<div class=\"aboutJob\">\r\n\t\t\t<p class=\"jobName\"><strong>{{job.name}}</strong></p>\r\n\t\t\t<p>{{job.role}}</p>\r\n\t\t\t<br>\r\n\t\t\t<span><strong>Proyectos:</strong></span>\r\n\t\t\t\t<ul class=\"jobProyects\">\r\n\t\t\t\t\t<li *ngFor=\"let project of job.projects\">{{project.name}}</li>\r\n\t\t\t\t</ul>\r\n\t\t\t<p><strong>Desde: </strong>{{job.from}}</p>\r\n\t\t\t<p><strong>Hasta: </strong>{{job.to}}</p>\r\n\t\t</div>\r\n\t</div>\r\n</div>"
+module.exports = "<div class=\"row xperience-container\">\n\t<div *ngFor=\"let job of jobs\" class=\"jobCard card col-12 col-sm-10 col-md-7 col-lg-5 mr-auto ml-auto justify-content-between\">\n\t\t<div class=\"aboutJob\">\n\t\t\t<p class=\"jobName\"><strong>{{job.name}}</strong></p>\n\t\t\t<p>{{job.role}}</p>\n\t\t\t<br>\n\t\t\t<span><strong>Proyectos:</strong></span>\n\t\t\t\t<ul class=\"jobProyects\">\n\t\t\t\t\t<li *ngFor=\"let project of job.projects\">{{project.name}}</li>\n\t\t\t\t</ul>\n\t\t\t<p><strong>Desde: </strong>{{job.from}}</p>\n\t\t\t<p><strong>Hasta: </strong>{{job.to}}</p>\n\t\t</div>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -235,7 +230,7 @@ var ContactComponent = (function () {
         this.parent = parent;
         this.name = "Neiro Andres Torres Castro";
         this.email = "neiroandres@yahoo.com.co";
-        this.mobile = "(+57) 3044834004";
+        this.mobile = "(+57) 3053671792";
         this.location = "Medellín, Colombia";
         this.emailTitle = "Email:";
         this.mobileTitle = "Móvil:";
@@ -364,6 +359,11 @@ var SkillsComponent = (function () {
             },
             { name: 'MongoDB',
                 image: '../../assets/images/workExperience/mongodb.png',
+                level: 'Medio',
+                workExperience: 'Sí'
+            },
+            { name: 'Amazon DynamoDB',
+                image: '../../assets/images/workExperience/dynamoDb.png',
                 level: 'Básico',
                 workExperience: 'Sí'
             },
@@ -400,6 +400,11 @@ var SkillsComponent = (function () {
             { name: 'Bootstrap',
                 image: '../../assets/images/workExperience/bootstrap.png',
                 level: 'Alto',
+                workExperience: 'Sí'
+            },
+            { name: 'Redis',
+                image: '../../assets/images/workExperience/redis.png',
+                level: 'Basico',
                 workExperience: 'Sí'
             },
             { name: 'VBA',

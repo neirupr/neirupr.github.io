@@ -58,6 +58,7 @@ body{
 }
 
 .skillCard img{
+	background-color: #5353532b;
 	max-width:150px;
 	height:150px;
 	padding:10px;
@@ -134,8 +135,6 @@ body{
 .aboutJob{
 	display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction:column;
 }
 .aboutJob p{
 	flex-grow:1;
